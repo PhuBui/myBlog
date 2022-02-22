@@ -1,0 +1,35 @@
+body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#container {
+    width: 1170px;
+    padding-top:30px;
+    margin: auto;
+}
+
+#sidebar, #content, header, footer{
+    background-color: gray;
+}
+
+#sidebar {
+    background-color: gray;
+    width: 22%;
+    float: left;
+    padding: 0px 15px;
+}
+
+#main {
+    width: 72%;
+    float: right;
+    padding: 0px 15px;
+}
+
+header, #content, footer {
+    margin: 15px 0;
+}
+
+header {
+    margin-top:0px;
+}
