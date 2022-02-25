@@ -14,11 +14,42 @@ body {
 }
 
 #sidebar {
-    background-color: gray;
+    background-color: rgb(247, 236, 236);
     width: 22%;
     float: left;
-    padding: 0px 15px;
+    padding: 0px 0px;
+    height: 660px;
+    
 }
+.gach{
+
+}
+
+.taicv{
+    width: auto;
+    height: 40px;
+    background-color: rgb(247, 236, 236);
+    padding-left: 45px; 
+    
+}
+.dcv{
+    background-color: orangered;
+    color: aliceblue;
+    font-variant: small-caps;
+    border-radius: 15px;
+    width: 160px;
+    font-size: 15px;
+    height: 34px;
+    text-align: center;
+    border: 1px solid snow;
+      
+    
+}
+#sidebar ul{
+    
+    list-style-type: circle ;
+}
+
 
 #main {
     width: 72%;
