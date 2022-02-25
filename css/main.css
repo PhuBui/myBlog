@@ -33,3 +33,79 @@ header, #content, footer {
 header {
     margin-top:0px;
 }
+body{
+    background-color: rgb(168, 242, 252);
+    
+}
+#content{
+    background-color: white;
+    border-radius: 7px;
+    font-size: 16px ;
+
+}
+#content1{
+    height: 350px;
+    padding: 0 15px;
+}
+#content1a{
+    padding: 0 15px;
+}
+#content1b{
+    padding: 30px 0px 45px;
+    padding-top: 25px;
+    margin: 0px;
+    
+}
+#content2{
+    background-color: rgb(234, 235, 236);
+    height: 300px;
+
+}
+#content2b{
+    padding: 30px 30px 45px;
+    padding-top: 25px;
+    margin: 0px;
+    
+}
+
+#content3{
+    height: 350px;
+}
+#content3a{
+    padding: 0 0px;
+}
+#content3t{
+    width: 43%;
+    padding: 60px 30px 50px;
+    float: left;
+    margin: 0px;
+}
+#content3s{
+    width: 42%;
+
+    padding: 60px 30px 50px;
+    float: right;
+}
+#content3>hr{
+    border-radius: 3px;
+    color: gainsboro;
+}
+
+#hr1{
+    position: relative;
+    top: -13px;
+}
+#hrgach{
+    position: relative;
+    top: -38px;
+    
+}
+h2{
+    
+    font-size: 20px;
+}
+#gach>hr{
+    background-color: rgb(255, 221, 158);
+    border: 0px;
+}
+
