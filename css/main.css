@@ -1,6 +1,8 @@
 body {
     padding: 0px;
     margin: 0px;
+    font-family: sans-serif;
+    color: black;
 }
 
 #container {
@@ -140,3 +142,22 @@ h2{
     border: 0px;
 }
 
+#main  ul li{
+    list-style: none;
+    background-color: rgb(83, 78, 78);
+    text-align: center;
+    /* text-decoration: none; */
+}
+#main ul li a{
+    color: aliceblue;
+    text-decoration: none
+}
+#main li{
+    color: black;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    
+}
