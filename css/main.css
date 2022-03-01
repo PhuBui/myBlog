@@ -24,12 +24,15 @@ body {
     height: 660px;
     
 }
+.gach>h3,p{
+    padding-left: 20px;
+}
 
 .taicv{
     width: auto;
     height: 40px;
-    background-color: rgb(247, 236, 236);
-    padding-left: 45px; 
+    background-color: white;
+    padding-left: 35px; 
     
 }
 .dcv{
@@ -38,11 +41,11 @@ body {
     font-variant: small-caps;
     border-radius: 15px;
     width: 160px;
-    font-size: 15px;
+    font-size: 10px;
     height: 34px;
     text-align: center;
     border: 1px solid snow;
-      
+    
     
 }
 #sidebar ul{
@@ -166,16 +169,18 @@ h2{
     width: 4px;
     height: 4px;
     position: relative;
-    border: 1px solid #121211;
+    border: 1px solid orange;
     left: -13px;
     background-color: white;
 }
 
 #sidebar ul {
     list-style-type: none;
+    padding-left: 15px;
 }
 
 #sidebar li {
     border-left: 1px solid black;
     padding-left: 10px;
+    font-size: 14px;
 }

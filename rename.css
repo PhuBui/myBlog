@@ -1,0 +1,381 @@
+body {
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    color: black;
+    background-image: url("../img/bg.png");
+    background-color: #fafafa;
+}
+
+#container {
+    width: 1170px;
+    padding-top:30px;
+    margin: auto;
+}
+
+#sidebar, #content, header, footer{
+    background-color: white;
+}
+
+#sidebar {
+    width: 22%;
+    float: left;
+    padding: 0px 0px;
+    height: 660px;
+    
+}
+.gach>h3,p{
+    padding-left: 20px;
+}
+
+.taicv{
+    width: auto;
+    height: 40px;
+    background-color: white;
+    padding-left: 35px; 
+    
+}
+.dcv{
+    background-color: orangered;
+    color: aliceblue;
+    font-variant: small-caps;
+    border-radius: 15px;
+    width: 160px;
+    font-size: 10px;
+    height: 34px;
+    text-align: center;
+    border: 1px solid snow;
+    
+    
+}
+#sidebar ul{
+    
+    list-style-type: circle ;
+}
+
+
+#main {
+    width: 72%;
+    float: right;
+    padding: 0px 15px;
+}
+
+header, #content, footer {
+    margin: 15px 0;
+}
+
+header {
+    margin-top:0px;
+}
+
+.layout{
+    width: 100%;
+    height: 100px;
+}
+
+
+.chuh>h2{
+    width: 30px;
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    padding-left: 30px;
+}
+
+#main  ul li{
+    list-style: none;
+    background-color: rgb(83, 78, 78);
+    text-align: center;
+    /* text-decoration: none; */
+}
+#main ul li a{
+    color: aliceblue;
+    text-decoration: none
+}
+#main li{
+    color: black;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: -5px;
+    
+}
+
+.box {
+    border-radius: 10px 10px;
+}
+
+#sidebar .dot{
+    display: inline-block;
+    border-radius: 50px;
+    width: 4px;
+    height: 4px;
+    position: relative;
+    border: 1px solid #121211;
+    left: -13px;
+    background-color: white;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+#sidebar li {
+    border-left: 1px solid black;
+    padding-left: 10px;
+    font-size: 14px;
+}
+.layout .net{
+    width: 10px;
+    height: 7px;
+    border-radius: 3px;
+    position: absolute;
+    top: 132px;
+    background-color: #ff5a14;
+    left: 510px;
+    padding-left: 90px;
+}
+.content{
+    width: 100%;
+    border-radius: 6px;
+    height: 2000px;
+    
+}
+.left{
+    width: 50%;
+    background-color: white;
+    height: 700px;
+    float: left;
+    display: block;
+    line-height: 10px;
+    
+}
+.left>h4{
+    padding-top: 40px;
+    position: relative;
+}
+.left>h3,h4{
+    padding-left: 110px;
+    padding-top: 0px;
+    
+}
+
+.left>p,span{
+    font-size: 10px;
+    padding-top: 0px;
+    padding-left: 110px;
+    color: grey;
+}
+
+.left>i{
+    width: 53px;
+    height: 52px;
+    border-radius: 30px ;
+    background-color: #ff5a14;
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+
+
+.right{
+    float: left;
+    width: 50%;
+    background-color: white;
+    height: 700px;
+    display: block;
+    line-height: 10px;
+    
+
+}
+.right>h4{
+    padding-top: 40px;
+    position: relative;
+}
+.right>h3,h4{
+    padding-left: 110px;
+    padding-top: 0px;
+    
+}
+
+.right>p,span{
+    font-size: 10px;
+    padding-top: 0px;
+    padding-left: 110px;
+    color: grey;
+}
+
+.right>i{
+    width: 53px;
+    height: 52px;
+    border-radius: 30px ;
+    background-color: #ff5a14;
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 30px;
+}
+.left>i>.fa fa-suitcase{
+    display:inline-block;
+    font-size: 35px;
+    background-color: #fafafa;
+    position: absolute;
+    top: 200px;
+}
+.cham{
+    display: inline-block;
+    padding-left: 0px;
+    border-radius: 50px;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border: 1px solid orange;
+    left: 53px;
+    background-color: white;
+}
+.chamr{
+    display: inline-block;
+    padding-left: 0px;
+    border-radius: 50px;
+    width: 7px;
+    height: 7px;
+    position: absolute;
+    border: 1px solid orange;
+    left: 53px;
+    background-color: white;
+}
+.thehr{
+    width: 1px;
+    height: 470px;
+    position: absolute;
+    
+    top: 277px;
+    left: 543px;
+    background-color: gray;
+}
+.thehrr{
+    
+    width: 1px;
+    height: 470px;
+    position: absolute;
+    top: 280px;
+    right: 552px;
+    background-color: gray;
+}
+.clin{
+    clear: both;
+    position: relative;
+    width: 844px;
+    height: 350px;
+    background-color: #fafafa;
+
+}
+.gachchan{
+    position: absolute;
+    top: 30px;
+    left: 28px;
+    width: 7px;
+    height: 7px;
+    background-color: #ff5a14;
+    border-radius: 3px;
+    padding-left: 70px;
+}
+
+.chuh2>h2{
+
+    
+    position: absolute;
+    display: block;
+    font-size: 20px;
+    padding-left: 30px;
+}
+.chuh2{
+    
+}
+.hinh1{
+    position: absolute;
+    top: 80px;
+    left: 30px;
+    float: left;
+    border-radius: 5px;
+    padding-left: 95px;
+    padding-top: 35px;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+}
+.hinh1>img{
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    width: 110px;
+    height: 55px;
+    
+}
+.hinh2{
+    position: absolute;
+    top: 80px;
+    left: 235px;
+    float: left;
+    border-radius: 5px;
+    padding-left: 95px;
+    padding-top: 35px;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+}
+.hinh2>img{
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    width: 110px;
+    height: 55px;
+    
+}
+.hinh3{
+    position: absolute;
+    top: 80px;
+    left: 440px;
+    float: left;
+    border-radius: 5px;
+    padding-left: 95px;
+    padding-top: 35px;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+}
+.hinh3>img{
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    width: 110px;
+    height: 55px;
+    
+}
+.hinh4{
+    position: absolute;
+    top: 80px;
+    left: 643px;
+    float: left;
+    border-radius: 5px;
+    padding-left: 95px;
+    padding-top: 35px;
+    width: 70px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px;
+} 
+.hinh4>img{
+    position: absolute;
+    top: 20px;
+    left: 26px;
+    width: 110px;
+    height: 55px;;
+    
+}
