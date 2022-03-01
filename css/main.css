@@ -5,6 +5,7 @@ body {
     color: black;
     background-image: url("../img/bg.png");
     background-color: #fafafa;
+    font-size: 16px;
 }
 
 #container {
@@ -178,4 +179,44 @@ h2{
 #sidebar li {
     border-left: 1px solid black;
     padding-left: 10px;
+}
+#blog{
+    background-color: white;
+    border-radius: 10px;
+}
+#noidungl{
+    padding: 15px;
+    
+}
+#noidungn{
+    padding: 15px 15px;
+}
+#tin{
+    width: 238px;
+    background-color: rgb(252, 252, 252);
+    padding: 15px 15px;
+    border: 1px solid white;
+}
+
+#tieude>img{
+    width: 100%;
+    border-top-left-radius:  10px;
+    border-top-right-radius: 10px;
+}
+#tieude{
+    background-color: white;
+    font-size: 13px;
+    border-radius: 10px;
+}
+#chutin>p{
+    color: rgb(141, 138, 138);
+}
+#chutin{
+    padding: 0px 15px 15px;
+}
+#hang1{
+    float: left;
+}
+#muccuoi{
+    padding: 100px 0px 100px;
 }
