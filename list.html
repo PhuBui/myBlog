@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input name="" />
+    <button id="btnSubmit" onclick="submit()" >Submit</button>
+    <hr>
+    <ul id="list">
+        <li class="nut">Book</li>
+        <li class="nut">Table</li>
+    </ul>
+
+    <script>
+        // DOM document object model
+        var btn = document.getElementById("btnSubmit");
+        console.log(btn);
+        btn.innerText = "OK";
+
+        var btnClass = document.getElementsByClassName("nut");
+        console.log(btnClass);
+
+        var list = document.getElementById("list");
+        console.log(list.innerHTML);
+        console.log(list.innerText);
+        list.innerHTML += '<li class="nut">Hand</li>';
+
+        // bat duoc event click
+        function submit() {
+            console.log('submit');
+            // lay chu nhap tu input
+
+            // gan chu vao list
+        }
+    </script>
+</body>
+</html>
