@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input name="" />
+    <input name="" id="laychu" />
     <button id="btnSubmit" onclick="submit()" >Submit</button>
     <hr>
     <ul id="list">
@@ -32,8 +32,20 @@
         // bat duoc event click
         function submit() {
             console.log('submit');
-            // lay chu nhap tu input
+          // lay chu nhap tu input
 
+            
+            var laychu = document.getElementById("laychu").value;
+
+            var list = document.getElementById("list");
+            console.log(list.innerHTML);
+            
+            list.innerHTML += '<li class="nut">' + laychu + '</li>';
+            
+
+
+
+           
             // gan chu vao list
         }
     </script>
