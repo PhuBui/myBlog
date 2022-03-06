@@ -148,22 +148,26 @@ header {
     background-color: white;
     height: 700px;
     float: left;
-    display: block;
+    
     line-height: 10px;
     
 }
-.left>h4{
+.left>h2{
     padding-top: 40px;
     position: relative;
+
 }
-.left>h3,h4{
+.left>h3,p{
     padding-left: 110px;
     padding-top: 0px;
     
 }
+.thes{
+    padding-left: 110px;
+}
 
-.left>p,span{
-    font-size: 10px;
+.left>p{
+    font-size: 11px;
     padding-top: 0px;
     padding-left: 110px;
     color: grey;
@@ -188,20 +192,18 @@ header {
     height: 700px;
     display: block;
     line-height: 10px;
-    
-
 }
-.right>h4{
+.right>h2{
     padding-top: 40px;
     position: relative;
 }
-.right>h3,h4{
+.right>h3{
     padding-left: 110px;
     padding-top: 0px;
     
 }
 
-.right>p,span{
+.right>p{
     font-size: 10px;
     padding-top: 0px;
     padding-left: 110px;
@@ -232,8 +234,9 @@ header {
     width: 7px;
     height: 7px;
     position: absolute;
+    right: 10px;
     border: 1px solid orange;
-    left: 53px;
+    left: 541px;
     background-color: white;
 }
 .chamr{
@@ -244,26 +247,26 @@ header {
     height: 7px;
     position: absolute;
     border: 1px solid orange;
-    left: 53px;
+    right: 550px;
     background-color: white;
 }
-.thehr{
-    width: 1px;
-    height: 470px;
+.left>.thehr{
+    width: 3px;
+    height: 405px;
     position: absolute;
-    
+    left: 544px;
     top: 277px;
-    left: 543px;
-    background-color: gray;
-}
-.thehrr{
     
-    width: 1px;
-    height: 470px;
+    background-color: rgb(252, 240, 240);
+}
+.right>.thehrr{
+    
+    width: 3px;
+    height: 405px;
     position: absolute;
     top: 280px;
-    right: 552px;
-    background-color: gray;
+    right: 553px;
+    background-color: rgb(252, 240, 240);
 }
 .clin{
     clear: both;
