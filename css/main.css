@@ -220,3 +220,57 @@ h2{
 #muccuoi{
     padding: 100px 0px 100px;
 }
+#contact{
+    background-color: white;
+    padding: 30px 30px;
+    height: 1000px;
+    border-radius: 10px;
+}
+#nutsub{
+    background-color: orange;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+    
+    border: 1px ;
+    font-size: 100%;
+    
+}
+#contact1{
+    width: 50%;
+    float: left;
+    height: 400px;
+    
+}
+#name>p{
+    padding: 30px 15px;
+}
+#name{
+    width: 40%;
+    float: left;
+    border: 1px ;
+    padding-right: 20px;
+}
+#name2{
+    width: 85%;
+    float: left;
+    border: 1px ;
+    padding-right: 20px;
+}
+#name2>p{
+    padding: 30px 15px;
+}
+#contact3{
+    width: 100%;
+    float: left;
+    height: 400px;
+    
+}
+#contact3>iframe{
+    width: 100%;
+}
+#gachcontact{
+    position: relative;
+    top: -10%;
+}
