@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <input name="" />
+    <input id="inputText"/>
     <button id="btnSubmit" onclick="submit()" >Submit</button>
     <hr>
     <ul id="list">
@@ -17,8 +17,10 @@
 
     <script>
         // DOM document object model
+        /*
         var btn = document.getElementById("btnSubmit");
         console.log(btn);
+        console.log(btn.innerText);
         btn.innerText = "OK";
 
         var btnClass = document.getElementsByClassName("nut");
@@ -28,13 +30,18 @@
         console.log(list.innerHTML);
         console.log(list.innerText);
         list.innerHTML += '<li class="nut">Hand</li>';
+        */
 
-        // bat duoc event click
+        // 1. bat duoc event click
         function submit() {
-            console.log('submit');
-            // lay chu nhap tu input
-
-            // gan chu vao list
+            // 2. lay chu nhap tu input
+            var theInput = document.getElementById("inputText");
+            var chuVuaNhap = theInput.value;
+            // 3. gan chu vao list
+            var list = document.getElementById("list");
+            list.innerHTML = list.innerHTML + '<li class="nut">' + chuVuaNhap + '</li>';
+            // 4. xoa input
+            theInput.value = '';
         }
     </script>
 </body>
