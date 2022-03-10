@@ -71,6 +71,7 @@ header {
 .layout{
     width: 100%;
     height: 100px;
+    position: relative;
 }
 
 
@@ -127,15 +128,15 @@ header {
     padding-left: 10px;
     font-size: 14px;
 }
-.layout .net{
-    width: 10px;
+ .net{
+    width: 90px;
     height: 7px;
     border-radius: 3px;
     position: absolute;
-    top: 132px;
+    top: 30px;
+    
+    left: 26px;
     background-color: #ff5a14;
-    left: 510px;
-    padding-left: 90px;
 }
 .content{
     width: 100%;
@@ -148,7 +149,7 @@ header {
     background-color: white;
     height: 700px;
     float: left;
-    
+    position: relative;
     line-height: 10px;
     
 }
@@ -163,6 +164,9 @@ header {
     
 }
 .thes{
+    padding-left: 100px;
+}
+.thespan{
     padding-left: 110px;
 }
 
@@ -192,6 +196,7 @@ header {
     height: 700px;
     display: block;
     line-height: 10px;
+    position: relative;
 }
 .right>h2{
     padding-top: 40px;
@@ -233,10 +238,11 @@ header {
     border-radius: 50px;
     width: 7px;
     height: 7px;
-    position: absolute;
+    position: relative;
     right: 10px;
     border: 1px solid orange;
-    left: 541px;
+    left: -58px;
+    
     background-color: white;
 }
 .chamr{
@@ -245,28 +251,28 @@ header {
     border-radius: 50px;
     width: 7px;
     height: 7px;
-    position: absolute;
+    position: relative;
     border: 1px solid orange;
-    right: 550px;
+    right: 57px;
     background-color: white;
 }
 .left>.thehr{
     width: 3px;
     height: 405px;
     position: absolute;
-    left: 544px;
-    top: 277px;
+    left: 54px;
+    top: 80px;
     
-    background-color: rgb(252, 240, 240);
+    background-color: rgb(250, 249, 249);
 }
 .right>.thehrr{
     
     width: 3px;
     height: 405px;
     position: absolute;
-    top: 280px;
-    right: 553px;
-    background-color: rgb(252, 240, 240);
+    top: 80px;
+    right: 363px;
+    background-color: rgb(250, 249, 249);
 }
 .clin{
     clear: both;
@@ -295,9 +301,7 @@ header {
     font-size: 20px;
     padding-left: 30px;
 }
-.chuh2{
-    
-}
+
 .hinh1{
     position: absolute;
     top: 80px;

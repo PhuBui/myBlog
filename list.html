@@ -19,27 +19,28 @@
 
         </ul>
     </div>
-    <script id="listItem">
-        var listItem = ['PHP', 'JAVASCRIPT', 'MYSQL'];
-    </script>
     <script>
-        function onInput() {
+        var listItem = ['PHP', 'JAVASCRIPT', 'MYSQL', 'trung'];
 
-            var listItem = document.getElementById("listItem");
-            console.log(listItem.value);
-            var list = document.getElementById("list");
-            list.innerHTML += '<li>' + alert.listItem + '</li>';
-            listItem.value = '';
-        }
+        // function onInput() {
+        //     var inputItem = document.getElementById("inputItem");
+        //     console.log(inputItem.value);
+        //     var list = document.getElementById("list");
+        //     list.innerHTML += '<li>' + inputItem.value + '</li>';
+        //     inputItem.value = '';
 
-        function onInput() {
-            var inputItem = document.getElementById("inputItem");
-            console.log(inputItem.value);
-            var list = document.getElementById("list");
-            list.innerHTML += '<li>' + inputItem.value + '</li>';
-            inputItem.value = '';
+        // }
+        function init() {
+            for (let i = 0; i <= listItem.length - 1; i++) {
+                var list = document.getElementById("list");
+                list.innerHTML += '<li>' + listItem[i] + '</li>';
+            }
         }
+        init();
+
     </script>
+
+
 </body>
 
 </html>
