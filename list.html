@@ -15,28 +15,34 @@
     <div>
         <h3>Menu</h3>
         <input id="searchKey" type="text">
-        <ul id="list">
+        <ul id="danhsach">
 
         </ul>
     </div>
     <script>
         var listItem = ['PHP', 'JAVASCRIPT', 'MYSQL', 'trung'];
 
-        // function onInput() {
-        //     var inputItem = document.getElementById("inputItem");
-        //     console.log(inputItem.value);
-        //     var list = document.getElementById("list");
-        //     list.innerHTML += '<li>' + inputItem.value + '</li>';
-        //     inputItem.value = '';
+        function onInput() {
+            var inputItem = document.getElementById("inputItem");
+            console.log(inputItem.value);
+            listItem.push(inputItem.value); 
+            console.log(listItem);
+            var danhsach = document.getElementById("danhsach");
+            danhsach.innerHTML='';
+            inputItem.value='';
+            init();
+            
+        }
 
-        // }
         function init() {
-            for (let i = 0; i <= listItem.length - 1; i++) {
-                var list = document.getElementById("list");
+            for (let i = listItem.length - 1; i >= 0; i = i-1) {
+                var list = document.getElementById("danhsach");
                 list.innerHTML += '<li>' + listItem[i] + '</li>';
+                
             }
         }
         init();
+        
 
     </script>
 
