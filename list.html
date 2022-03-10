@@ -1,32 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-    </head>
-    <body>
-        <input id="inputItem" type="text"/> 
-        <button onclick="onInput()">Input</button>
-        <hr>
-        <div>
-            <h3>Menu</h3>
-            <input id="searchKey" type="text">
-            <ul id="list">
-                
-            </ul>
-        </div>
-        <script>
-            var listItem = ['PHP', 'JAVASCRIPT', 'MYSQL'];
-            
-            function onInput(){
-                var inputItem = document.getElementById("inputItem");
-                console.log(inputItem.value);
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="inputItem" type="text" />
+    <button onclick="onInput()">Input</button>
+    <hr>
+    <div>
+        <h3>Menu</h3>
+        <input id="searchKey" type="text">
+        <ul id="list">
+
+        </ul>
+    </div>
+    <script>
+        var listItem = ['PHP', 'JAVASCRIPT', 'MYSQL', 'trung'];
+
+        // function onInput() {
+        //     var inputItem = document.getElementById("inputItem");
+        //     console.log(inputItem.value);
+        //     var list = document.getElementById("list");
+        //     list.innerHTML += '<li>' + inputItem.value + '</li>';
+        //     inputItem.value = '';
+
+        // }
+        function init() {
+            for (let i = 0; i <= listItem.length - 1; i++) {
                 var list = document.getElementById("list");
-                list.innerHTML += '<li>' + inputItem.value + '</li>';
-                inputItem.value = '';
+                list.innerHTML += '<li>' + listItem[i] + '</li>';
             }
-        </script>
-    </body>
+        }
+        init();
+
+    </script>
+
+
+</body>
+
 </html>
