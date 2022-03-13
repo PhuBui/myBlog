@@ -36,7 +36,7 @@
 
             for (let i = listItem.length - 1; i >= 0; i = i-1) {
                 var list = document.getElementById("danhsach");
-                list.innerHTML += '<li>' + listItem[i] + '<button onclick="xoa(\'' + listItem[i] + '\')">xóa</button></li>';
+                list.innerHTML += '<li>' + listItem[i] + '<button onclick="xoa(' + i + ')">xóa</button></li>';
             }
         }
         init();
@@ -47,20 +47,7 @@
         // 3. In lai danh sach .list cua the ul
 
         function xoa(item) {
-            // 1. lay item
-            console.log('xoa: ' + item);
-            console.log(listItem);
-
-            // 2. xoa khoi mang listItem ['phu', 'phu', 'phu'] => xoa phu
-            for (let i = 0; i < listItem.length; i++) {
-                if (listItem[i] === item) {
-                    listItem.splice(i, 1);
-                    break;
-                }
-            }
-            console.log(listItem);
-
-            // 3. in lai danh sach list 
+            listItem.splice(item, 1);
             init();
         }
 
