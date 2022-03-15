@@ -13,33 +13,31 @@
     <button onclick="onInput()">Input</button>
     <hr>
     <div>
-        <h3>Menu</h3>
-        <input id="searchKey" type="text">
+        <h3>Menu</h3> <input id="searchKey" type="text"> <button onclick="search()">Search</button>
         <ul id="danhsach">
 
         </ul>
     </div>
     <script>
         var listItem = ['PHP', 'JAVASCRIPT', 'MYSQL', 'trung' , '1'];
+        init(listItem);
 
         function onInput() {
             var inputItem = document.getElementById("inputItem");
             listItem.push(inputItem.value); 
             inputItem.value='';
-            init();
-            
+            init(listItem);
         }
 
-        function init() {
+        function init(data) {
             var danhsach = document.getElementById("danhsach");
             danhsach.innerHTML='';
-
-            for (let i = listItem.length - 1; i >= 0; i = i-1) {
+            for (let i = data.length - 1; i >= 0; i = i-1) {
                 var list = document.getElementById("danhsach");
-                list.innerHTML += '<li>' + listItem[i] + '<button onclick="xoa(' + i + ')">xóa</button></li>';
+                list.innerHTML += '<li>' + data[i] + '<button onclick="xoa(' + i + ')">xóa</button></li>';
             }
         }
-        init();
+        
 
         // XOA
         // 1. Khi an nut XOA thi` se phai lay duoc cai item tuong ung. VD: PHP
@@ -48,7 +46,18 @@
 
         function xoa(item) {
             listItem.splice(item, 1);
-            init();
+            init(listItem);
+        }
+
+        function search() {
+            var inputSearch = document.getElementById("searchKey");
+            var foundItem = [];
+            for (let i = 0; i < listItem.length; i++) {
+                if (listItem[i].includes(inputSearch.value)) {
+                    foundItem.push(listItem[i]);
+                }
+            }
+            init(foundItem);
         }
 
     </script>
