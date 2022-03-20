@@ -31,7 +31,8 @@
         */
 
         function isBeautiful(number) {
-            let tong1 = 0; let tong2 = 0;
+            let tong1 = 0; 
+            let tong2 = 0;
             // chuyển number thành string để tính tổng chữ số của số nhập vào. 
             // number = 123006; => a.length = 3
             let stringNumber = number.toString(); // stringNumber = '123006'
@@ -39,34 +40,26 @@
             // tìm n. n là tổng các chữ số của nửa đầu, nửa cuối.
             // 1234 => 2 => 4 / 2 = 2
             // 123456 => 3 => 6 / 2 = 3
-            let n = stringNumber.length / 2;
-            if (n % 2 !== 0) {
+            if (stringNumber.length % 2 !== 0) {
                 return false;
-            }  
+            }
+            let n = stringNumber.length / 2;
             console.log("n = " + n);
             // tinh tong 1 ..tinh tong 2
             // 123456 => for
             for(let i = 0; i < stringNumber.length; i++) {
                 if (i < n) { // tính tổng 1
-                    tong1 += parseInt(stringNumber[i]);
-                }
-
-                if (i >= n) { // tính tổng 2
-                    tong2 += parseInt(stringNumber[i]);
+                    tong1 += parseInt(stringNumber[i]); // đổi string to number
+                } else { // tính tổng 2
+                    tong2 += parseInt(stringNumber[i]); // đổi string to number
                 }
             }
-            console.log("tong1 = " + tong1); // 6
-            console.log("tong2 = " + tong2); // 15
-
-            if (tong1 === tong2) {
-                return true;
-            } else {
-                return false;
-            }
+            console.log("tong1 = " + tong1 + " | tong2 = " + tong2);
+            return tong1 === tong2;
 
         }
-         
-        if (isBeautiful(1230006)) {
+
+        if (isBeautiful(12345678)) {
             console.log("is beautiful");
         } else {
             console.log("is not beautiful");
