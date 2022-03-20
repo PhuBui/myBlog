@@ -7,7 +7,71 @@
     <title>Document</title>
 </head>
 <body>
+    <label>Ngay</label>
+    <select id="inputDate" name="">
+    </select>
+    <label>Thang</label>
+    <select id="inputMonth" name="" onchange="updateDate()">
+    </select>
+    <label>Nam</label>
+    <select id="inputYear" name="" onchange="updateDate()">
+    </select>
+
     <script>
+        function initDate(countDate) {
+            let inputDate = document.getElementById("inputDate");
+            inputDate.innerHTML = '';
+            for (let i = 1; i <= countDate; i++) {
+                inputDate.innerHTML += '<option value="' + i + '">' + i + '</option>';
+            }
+        }
+        initDate(31);
+
+        function initMonth() {
+            let inputMonth = document.getElementById("inputMonth");
+            inputMonth.innerHTML = '';
+            let i = 1;
+            while (i <= 12) {
+                inputMonth.innerHTML += '<option value="' + i + '">' + i + '</option>';
+                i++;
+            }
+        }
+        initMonth();
+
+        function initYear() {
+            let inputYear = document.getElementById("inputYear");
+            inputYear.innerHTML = '';
+            let i = 1970;
+            do {
+                inputYear.innerHTML += '<option value="' + i + '">' + i + '</option>';
+                i++;
+            } while(i < 2022);
+        }
+        initYear();
+
+        function updateDate() {
+            let selectedMonth = document.getElementById("inputMonth").value;
+            let selectedYear = document.getElementById("inputYear").value;
+            console.log('change month ' + selectedMonth + '/' + selectedYear);
+            // .... tinh so ngay trong thang
+            if (selectedMonth == 1 || selectedMonth == 3 || selectedMonth == 5) {
+                countDate = 31;
+            } else if (selectedMonth == 4 || selectedMonth == 6 || selectedMonth == 7) {
+                countDate = 30;
+            } else if (selectedMonth == 2) {
+                if (laNamNhuan(selectedMonth, selectedYear)) {
+                    countDate = 29;
+                } else {
+                    countDate = 28;
+                }
+            }
+            initDate(countDate);
+        }
+
+        function laNamNhuan(selectedMonth, selectedYear){
+            //....
+        }
+
         /*
         A number is considered beautiful if the sum of the first half of its digits is equal to the sum of the other half.
 
