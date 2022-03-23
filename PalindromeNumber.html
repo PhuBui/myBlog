@@ -1,13 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
-    <script>
+    <input id="xemso" value="" type="text">
+    <button onclick=" layso()">xem so</button>
+    <p id="xuatso"></p>
+    <script>  
+        let xemso = document.getElementById("xemso");
+        function layso(){
+            let x = xemso.value;
+            kiemtra(x);
+        }
+        function kiemtra(x){     
+            let xuatso= document.getElementById("xuatso");     
+            let chuoi = x.toString();
+            console.log(chuoi);
+
+            let phai = '';
+            for(let i=chuoi.length-1 ; i >=0 ;i--){
+                phai += chuoi[i];
+            }
+            console.log(phai);
+            if(phai == chuoi){
+                let theDiv =document.createElement("div");
+                theDiv.innerText ='so ban nhap ' +chuoi+' la so doi xung';
+                xuatso.appendChild(theDiv); 
+            } else{
+                let theDiv =document.createElement("div");
+                theDiv.innerText ='so ban nhap ' +chuoi+' la so khong doi xung';
+                xuatso.appendChild(theDiv); 
+            }
+        }       
+        
         /*
         Given an integer x, return true if x is palindrome integer.
         An integer is a palindrome when it reads the same backward as forward.
@@ -31,4 +62,5 @@
         */
     </script>
 </body>
+
 </html>
