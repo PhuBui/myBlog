@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* .khung {
+        text-align: center;
+        width: 600px;
+        height: 600px;
+        padding-left: 500px;
+    }
+
+    .control {
+        background-color: aqua;
+    }
+
+    .gia {
+        width: 300px;
+    }
+
+    .osl {
+        width: 50px;
+        background-color: yellow;
+    }
+
+    .sl {
+        width: 300px;
+    }
+
+    .tien {
+        width: 400px;
+    }
+
+    .chon {
+        width: 50px;
+    }
+
+    .dt {
+        width: 300px;
+    }
+
+    .banhang {
+        background-color: aqua;
+        border: 1px solid orange;
+    } */
+</style>
+
+<body>
+    <div class="khung">
+        <div class="noidung">
+            <h3>BÁN HÀNG</h3>
+            <select name="" class="control">
+                <option value="">Mức giá</option>
+                <option value="">20.000đ</option>
+                <option value="">25.000đ</option>
+                <option value="">30.000đ</option>
+                <option value="">35.000đ</option>
+                <option value="">40.000đ</option>
+            </select>
+            <hr>
+            <table border="1" class="banhang">
+                <tr>
+                    <td colspan="2" class="hh"><b>Hàng hóa</b></td>
+                    <td class="gia"><b>Đơn giá</b></td>
+                    <td class="sl"><b>Số lượng</b></td>
+                    <td class="tien"><b>Thành tiền</b></td>
+                </tr>
+                <tbody id="shopBody">
+
+                </tbody>
+                <tr>
+                    <td colspan="4"><b>Tổng</b></td>
+                    <td>460</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script>
+        // function Person(firstName, lastName){
+        //     this.firstName = firstName;
+        //     this.lastName = lastName;
+        //     this.fullName = function(){
+        //         return this.firstName + '' + this.lastName
+        //     }
+        // }
+        //     class Person{
+        //         constructor(firstName, lastName){
+        //             this.firstName = firstName;
+        //             this.lastName = lastName;
+        //         }
+        //         fullName(){
+        //             return this.firstName + '' + this.lastName;
+        //         }
+        //     }
+        //     let trung = new Person('trung', 'tran');
+        //     console.log(trung.fullName());
+        class SanPham {
+            constructor(name, gia, quantity) {
+                this.name = name;
+                this.gia = gia;
+                this.quantity = quantity;
+                
+            }          
+                        
+        } 
+        
+        let danhSachSanPham = [
+            new SanPham('Iphone 9', 700, 10),
+            new SanPham('Samsung', 400, 10),
+            new SanPham('Nokia', 100, 10),
+            new SanPham('Sony Xperia', 450, 10),
+            new SanPham('Motorola', 180, 10),
+            new SanPham('Oppo', 600, 10),
+            new SanPham('Bphone', 90, 10),
+        ];
+        
+        // <tr><td></td></tr>
+        // itemTr.appendChild(itemTdPay); ở dưới
+        // shop Body.appendChild (itemTr); ở dưới
+        let demDS = danhSachSanPham.length;
+        console.log(demDS);
+
+        let demSP = SanPham.length
+        let hanghoa = this.name
+        console.log(name)
+        console.log(demSP);
+        
+        for (let i = 0; i < demDS; i++) {
+
+            let shopBody = document.getElementById('shopBody');
+            let itemTr = document.createElement('tr');
+            let itemTdCheckbox = document.createElement('td');
+            let inputCheckbox = document.createElement('input');
+            // let inputCheckText = document.createElement('inputtext');
+
+            inputCheckbox.setAttribute('type', 'checkbox');
+            itemTdCheckbox.appendChild(inputCheckbox);
+            itemTr.appendChild(itemTdCheckbox)
+
+            let itemTdName = document.createElement('td');
+            itemTdName.innerText = name;
+            itemTr.appendChild(itemTdName);
+            shopBody.appendChild(itemTr);
+
+            let itemTdgia = document.createElement('td');
+            itemTdgia.innerText = '700';
+            itemTr.appendChild(itemTdgia);
+            shopBody.appendChild(itemTr);
+
+            let inputQty = document.createElement('input');
+            let itemTdQty = document.createElement('td');
+            inputQty.setAttribute('type', 'number');
+            inputQty.setAttribute('value', '0');
+            itemTdQty.appendChild(inputQty);
+            itemTr.appendChild(itemTdQty);
+
+            let itemTdThanhTien = document.createElement('td');
+            itemTdThanhTien.innerText = '700';
+            itemTr.appendChild(itemTdThanhTien);
+            shopBody.appendChild(itemTr);
+
+        }
+        // let itemTdCheckText = document.createElement('td'); 
+        // itemTdCheckText.innerText = '700';
+        // itemTdCheckText.appendChild(inputCheckText);
+        // itemTr.appendChild(itemTdCheckt)
+
+
+        ;
+
+
+        // class ShopCart {
+        //     constructor(listSanPham) {
+        //         this.listSanPham = listSanPham;
+        //     }
+        //     total() {
+        //         let countTotal = 0;
+        //         for (let i in this.listSanPham) {
+        //             countTotal += this.listSanPham[i].gia;
+        //         }
+        //         return countTotal;
+        //     }
+        // }
+        // let cart = new ShopCart([iphone9, samsung]);
+        // console.log(cart);
+        // console.log(cart.total());
+    </script>
+</body>
+
+</html>
