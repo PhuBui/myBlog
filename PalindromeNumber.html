@@ -7,28 +7,38 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="nhap"><button onclick="lay()">Chọn</button>
+    <p id="xuatso"></p>
     <script>
-        /*
-        Given an integer x, return true if x is palindrome integer.
-        An integer is a palindrome when it reads the same backward as forward.
-        For example, 121 is a palindrome while 123 is not.
-        
-        Example 1:
+        let nhap = document.getElementById("nhap");
+        let xuatso = document.getElementById("xuatso");
+        function lay(){
+            let x = nhap.value;
+            kiemtra(x);
+        }
+        function kiemtra(){
+            
+            let chuoi = x.toString();
+            console.log(chuoi);
+            let benphai = '';
+            for(let i = chuoi.length-1;i>=0;i--){
+                benphai += chuoi[i];
+            }
+            console.log(benphai);
+            if (benphai == chuoi){
+                let theDiv = document.createElement("div");
+                theDiv.innerText= 'doi xung'+chuoi;
+                  // document.getElementById("xuatso").innerHTML= 'doi xung'+chuoi;
+                xuatso.appendChild(theDiv);
+                
+            } else {
+                document.getElementById("xuatso").innerHTML= 'ko doi xung'+chuoi;
+                
+            }            
+        }
+        console.log(kiemtra());
 
-        Input: x = 121
-        Output: true
-        Explanation: 121 reads as 121 from left to right and from right to left.
-        Example 2:
 
-        Input: x = -121
-        Output: false
-        Explanation: From left to right, it reads -121. From right to left, it becomes 121-. Therefore it is not a palindrome.
-        Example 3:
-
-        Input: x = 10
-        Output: false
-        Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
-        */
     </script>
 </body>
 </html>

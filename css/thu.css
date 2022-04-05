@@ -1,0 +1,40 @@
+.main{
+    width: 800px;
+    height: 600px;
+    margin: auto;
+  }
+  .h3{
+    margin-left:320px;
+    color: blue;
+  }
+  #mucgia{
+    padding: 5px 0;
+    width: 150px; 
+    text-align: center;
+    margin-left:320px;
+  
+  }
+    #tableSP{
+     width: 100%;  
+     padding: 20px;
+     background: aqua;
+     font-size: 18px;
+     
+    }
+    #tableSP tr{
+      background: rgb(42, 42, 156);
+    }
+    #tableSP th,td{
+      padding: 8px 0px;
+      text-align: center;
+  
+    }
+    #tableSP [name='sl']{
+      width: 60px;
+      text-align: center;
+      padding: 4px;
+    }
+    #tableSP #tinhtong{
+      color: rgb(226, 93, 93);
+      font-size: 22px;
+    }
