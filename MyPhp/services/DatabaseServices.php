@@ -4,10 +4,10 @@ class Database{
 
     public function connect(){
         $this->connection = new mysqli(
-            "database-1.cojrqizvgnut.ap-southeast-1.rds.amazonaws.com",
-            "admin",
-            "q1w2e3r4",
-            "db_garybui"
+            "localhost:3306",
+            "root",
+            "password",
+            "db_g_my_blog"
         );
     }
 
